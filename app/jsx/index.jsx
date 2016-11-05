@@ -1,3 +1,4 @@
+require("font-awesome/css/font-awesome.css");
 require("../css/semantic.css");
 //require("../css/font-awesome.css");
 //require("../css/fa-color.css");
@@ -63,7 +64,7 @@ var rootPath = "/app/";
 
 var App = React.createClass({
   render: function(){
-    return (<div>Hello World</div>);
+    return (<div>Hello World<i className="fa fa-lg fa-users" /></div>);
   }
 });
 //<IndexRoute component={AppContainer} />

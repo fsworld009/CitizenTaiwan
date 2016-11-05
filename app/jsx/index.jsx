@@ -16,7 +16,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 import { Provider, connect } from 'react-redux';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
-const store = require("./store.js");
+const store = require("../js/store.js");
 
 // var MainMenu = require("./MainMenu.jsx");
 // var LanguageMenu = require("./LanguageMenu.jsx");

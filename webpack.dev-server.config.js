@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var config = {
     entry: {
-        config: ["webpack-hot-middleware/client",/*'webpack/hot/dev-server'*/, path.resolve(__dirname, 'app/jsx/index.jsx')]
+        app: ["webpack-hot-middleware/client",/*'webpack/hot/dev-server'*/, path.resolve(__dirname, 'app/jsx/index.jsx')]
     },
     output: {
         //path and public Path is meaningless when used by expressjs

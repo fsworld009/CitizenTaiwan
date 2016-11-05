@@ -15,7 +15,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 import { Provider, connect } from 'react-redux';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
-// const store = require("./store.js");
+const store = require("./store.js");
 
 // var MainMenu = require("./MainMenu.jsx");
 // var LanguageMenu = require("./LanguageMenu.jsx");
@@ -29,8 +29,8 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 // var EditProfile = require("./EditProfile.jsx");
 // var UrlGenerator = require("./UrlGenerator.jsx");
 
-import {saveConfig} from './ajax.js';
-import {lang} from "./database.js";
+// import {saveConfig} from './ajax.js';
+// import {lang} from "./database.js";
 
 function mapStateToProps(state){
   // var loadingStatus = state.get("load").toObject();
@@ -59,21 +59,19 @@ function mapDispatchToProps(dispatch){
 
 
 
-var rootPath = "/config/";
+var rootPath = "/app/";
 
 var App = React.createClass({
   render: function(){
     return (<div>Hello World</div>);
   }
 });
-
+//<IndexRoute component={AppContainer} />
 var AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);
-
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
-        <Route path="*" component={App}/>
-        <IndexRoute component={App} />
+        <Route path="*" component={AppContainer}/>
     </Router>
   </Provider>,
   document.getElementById('app')

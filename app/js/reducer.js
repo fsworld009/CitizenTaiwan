@@ -17,6 +17,14 @@ var reducer = function(state, action){
     if (action.type === LOCATION_CHANGE) {
         return state.setIn(["routing", "locationBeforeTransitions"], action.payload);
     }
+    if(action.type == "LOADING"){
+        
+
+        if(action.loading == false){
+            console.log("GET DATA", action);
+            return state.set(action.content.page, action.content.data);
+        }
+    }
     console.log("return state",state.toJS());
     return state;
 };

@@ -16,6 +16,7 @@ const store = require("../js/store.js");
  var Menu = require("./Menu.jsx");
  var Page1 = require("./Page1.jsx");
  var Page2 = require("./Page2.jsx");
+ var Headings = require("./Headings.jsx");
 function mapStateToProps(state){
 
   return {};
@@ -50,6 +51,7 @@ ReactDOM.render(
         <Route path={rootPath} component={AppContainer}>
           <Route path="page1" component={Page1}/>
           <Route path="page2" component={Page2}/>
+          <IndexRoute component={Headings} />
         </Route>
     </Router>
   </Provider>,

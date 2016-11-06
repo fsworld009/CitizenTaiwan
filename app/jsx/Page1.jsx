@@ -19,4 +19,4 @@ var Page1 = React.createClass({
 });
 
 var Page1Container = connect(mapStateToProps, mapDispatchToProps)(Page1);
-module.exports = Page1;
+module.exports = Page1Container;

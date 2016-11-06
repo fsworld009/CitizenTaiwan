@@ -14,6 +14,8 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 const store = require("../js/store.js");
 
  var Menu = require("./Menu.jsx");
+ var Page1 = require("./Page1.jsx");
+ var Page2 = require("./Page2.jsx");
 function mapStateToProps(state){
 
   return {};
@@ -35,6 +37,9 @@ var App = React.createClass({
     return (
     <div>
       <Menu />
+      <div className="ui main text container" style={{marginTop: "5em"}}>
+        {this.props.children}
+      </div>
     </div>);
   }
 });
@@ -42,7 +47,10 @@ var AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
-        <Route path="*" component={AppContainer}/>
+        <Route path={rootPath} component={AppContainer}>
+          <Route path="page1" component={Page1}/>
+          <Route path="page2" component={Page2}/>
+        </Route>
     </Router>
   </Provider>,
   document.getElementById('app')

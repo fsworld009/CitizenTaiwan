@@ -45,16 +45,30 @@ var Page = React.createClass({
     return (<span><i className="fa fa-spin fa-spinner fa-lg"></i> Loading...</span>);
   }else{
     return (
-           <div className="ui three stackable cards">
+           <div className="ui items">
             {
               util.listToComponents(this.props.topics, function(topic, key){
                 return (
-                  <div className="card">
+                  <div className="item">
                     <div className="image">
-                      {topic.title}
+                      <img src="/images/wireframe/image.png"/>
+                    </div>
+                    <div className="content">
+                      <a className="header">Header</a>
+                      <div className="meta">
+                        <span>Description</span>
+                      </div>
+                      <div className="description">
+                        <p></p>
+                      </div>
+                      <div className="extra">
+                        Additional Details
+                      </div>
+                      <div className="pull-right">111</div>
                     </div>
                   </div>
-                  );
+              );
+
               })
             }
            </div>   

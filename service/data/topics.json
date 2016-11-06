@@ -1,14 +1,20 @@
 [
     {
-        "title":"International Civil Aviation Organization Excludes Taiwan from Assembly",
-        "caption" : "Taiwan was not invited to attend the assembly."
+        "id": 1,
+        "title":"Title 1",
+        "caption" : "Caption 1",
+        "preview": "..."
     },
     {
+        "id": 2,
         "title":"Title 2",
-        "caption" : "Caption 2"
+        "caption" : "Caption 2",
+        "preview": "..."
     },
     {
+        "id": 3,
         "title":"Title 3",
-        "caption" : "Caption 3"
+        "caption" : "Caption 3",
+        "preview": "..."
     }
 ]

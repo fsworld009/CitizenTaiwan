@@ -24,3 +24,6 @@
 - npm run dev-server
   - need supervisor installed globally
 - connect to index: http://localhost:3030/app/
+
+# Licence
+[MIT](https://opensource.org/licenses/MIT)

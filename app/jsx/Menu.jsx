@@ -1,4 +1,7 @@
 var React = require('react');
+import { connect } from 'react-redux';
+import {Link} from "react-router";
+var rootPath = "/app/";
 var Menu = React.createClass({
   render: function(){
     return (
@@ -11,8 +14,8 @@ var Menu = React.createClass({
         <div className="ui simple dropdown item">
           Dropdown <i className="fa fa-caret-down"></i>
           <div className="menu">
-            <a className="item" href="#">Link Item</a>
-            <a className="item" href="#">Link tem</a>
+            <Link className="item" to={rootPath + "page1/"}>Page1</Link>
+            <Link className="item" to={rootPath + "page2/"}>Page2</Link>
             <div className="divider"></div>
             <div className="header">Header Item</div>
             <div className="item">
@@ -36,5 +39,4 @@ var Menu = React.createClass({
     );
   }
 });
-
 module.exports = Menu;

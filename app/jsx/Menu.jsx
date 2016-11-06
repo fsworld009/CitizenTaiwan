@@ -8,7 +8,7 @@ var Menu = React.createClass({
     <div className="ui fixed inverted menu">
       <div className="ui container">
         <a href="#" className="header item">
-          Citizen Taiwan
+          Taiwan Citizen
         </a>
         <a href="#" className="item">Home</a>
         <div className="ui simple dropdown item">

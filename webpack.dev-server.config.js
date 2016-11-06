@@ -52,12 +52,12 @@ var config = {
         })
   ],
   devServer: {
-      contentBase: './web/',
+      contentBase: './app/',
       port: 3000,
       historyApiFallback: {
             index: '/',
             rewrites: [
-              { from: /^\/config\/*/, to: '/config/'}
+              { from: /^\/app\/*/, to: '/app/'}
           ]
       }
   }

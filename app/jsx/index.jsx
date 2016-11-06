@@ -1,11 +1,6 @@
 require("font-awesome/css/font-awesome.css");
 require("../css/semantic.css");
-//require("../css/font-awesome.css");
-//require("../css/fa-color.css");
-//require("../css/override.css");
 
-//window.jQuery = window.$ = require("jquery");
-//window.$ = window.jQuery = require("jquery");
 var _ = require("lodash");
 require("../js/semantic.js");
 
@@ -19,41 +14,14 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 const store = require("../js/store.js");
 
  var Menu = require("./Menu.jsx");
-// var LanguageMenu = require("./LanguageMenu.jsx");
-// var Status = require("./Status.jsx");
-// var Site= require("./Site.jsx");
-// var EditSite = require("./EditSite.jsx");
-// var User = require("./User.jsx");
-// var EditUser = require("./EditUser.jsx");
-// var Theme = require("./Theme.jsx");
-// var Profile = require("./Profile.jsx");
-// var EditProfile = require("./EditProfile.jsx");
-// var UrlGenerator = require("./UrlGenerator.jsx");
-
-// import {saveConfig} from './ajax.js';
-// import {lang} from "./database.js";
-
 function mapStateToProps(state){
-  // var loadingStatus = state.get("load").toObject();
-  // var loading = false;
-  // _.each(loadingStatus, function(status){
-  //   loading = loading || (status === "loading");
-  // });
-  // var saving = state.get("saving") == "saving";
-  // console.log("loading", loading, loadingStatus);
-  // return {
-  //   loading: loading,
-  //   saving: saving,
-  //   state: state
-  // };
+
   return {};
 }
 
 function mapDispatchToProps(dispatch){
   return {
-    // saveConfig: function(store){
-    //   dispatch(saveConfig(store));
-    // }
+
   };
 }
 
@@ -70,7 +38,6 @@ var App = React.createClass({
     </div>);
   }
 });
-//<IndexRoute component={AppContainer} />
 var AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);
 ReactDOM.render(
   <Provider store={store}>

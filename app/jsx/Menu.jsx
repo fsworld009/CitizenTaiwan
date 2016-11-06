@@ -27,7 +27,7 @@ var Menu = React.createClass({
         </div>
         <div className="menu right">
           <div className="ui simple dropdown item">
-          Account <i className="fa fa-caret-down"></i>
+          Login
           </div>
         </div>
       </div>

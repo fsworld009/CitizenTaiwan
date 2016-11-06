@@ -15,7 +15,7 @@
 - lodash
 - webpack
 - expressjs
-- supervisor and react component hot-loader integrated
+- supervisor, expressjs, webpack-hot-middleware, react-hot-loader has been configured
 - For now there is no database, service is reading static JSON files
 
 # Build guide
@@ -23,3 +23,4 @@
   - You can skip configuring Semantic UI
 - npm run dev-server
   - need supervisor installed globally
+- connect to index: http://localhost:3030/app/

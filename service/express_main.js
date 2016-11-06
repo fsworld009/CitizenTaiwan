@@ -9,11 +9,12 @@ var fs = require('fs');
 var bodyParser = require("body-parser");
 //Promise.promisifyAll(fs);
 
+var serviceRouter = require("./service_router.js");
 
 var environment = process.env.NODE_ENV;
 
 app.use(bodyParser.json());
-app.set('views', './views')
+app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.get("/app/*", function(req, res, next){
@@ -27,6 +28,7 @@ app.get("/app/", function(req, res, next){
 app.use('/js/', express.static(path.resolve(__dirname + '/js/')));
 app.use('/css/', express.static(path.resolve(__dirname + '/css/')));
 app.use('/fonts/', express.static(path.resolve(__dirname + '/fonts/')));
+app.use('/services/', serviceRouter);
 
 if(environment === "production"){
     //production

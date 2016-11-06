@@ -81,6 +81,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-pack": "webpack --config webpack.dev-server.config.js",
-    "dev-server": "cross-env NODE_ENV=development supervisor -w service/express_main.js,views/ -i client service/express_main"
+    "dev-server": "cross-env NODE_ENV=development supervisor -w service/,views/ -i client service/express_main"
   }
 }

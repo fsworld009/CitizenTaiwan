@@ -51,7 +51,7 @@ var Page = React.createClass({
                 return (
                   <div className="item">
                     <div className="image">
-                      <img src="/images/wireframe/image.png"/>
+                      <img src={"/images/topics/" + topic.id + "/banner.jpg"}/>
                     </div>
                     <div className="content">
                       <a className="header">Header</a>
@@ -64,7 +64,7 @@ var Page = React.createClass({
                       <div className="extra">
                         Additional Details
                       </div>
-                      <div className="pull-right">111</div>
+                      <button className="pull-right ui red button inverted">Take Action!</button>
                     </div>
                   </div>
               );

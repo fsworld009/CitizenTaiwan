@@ -2,8 +2,8 @@
 [Link](https://g0vus.hackpad.com/Citizen-Project-for-Taiwan-kJDHiCzRg1o)
 
 # TODO
-- Actual back-end
-- Database
+- back-end implementation
+- Database design
 - Support login with social media accounts (Facebook, Twitter, LINE, ...etc)
 
 
@@ -15,7 +15,7 @@
 - lodash
 - webpack
 - expressjs
-- supervisor, expressjs, webpack-hot-middleware, react-hot-loader has been configured
+- supervisor, expressjs, webpack-hot-middleware, react-hot-loader has been configured and integrated
 - For now there is no database, service is reading static JSON files
 
 # Build guide

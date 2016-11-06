@@ -1,5 +1,6 @@
 require("font-awesome/css/font-awesome.css");
 require("../css/semantic.css");
+require("../css/style.css");
 
 var _ = require("lodash");
 require("../js/semantic.js");
@@ -38,7 +39,7 @@ var App = React.createClass({
     return (
     <div>
       <Menu />
-      <div className="ui main text container" style={{marginTop: "5em"}}>
+      <div className="ui main text container" style={{marginTop: "7em"}}>
         {this.props.children}
       </div>
     </div>);

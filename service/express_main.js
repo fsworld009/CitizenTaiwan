@@ -24,10 +24,11 @@ app.get("/app/*", function(req, res, next){
 app.get("/app/", function(req, res, next){
     res.render("app",{env: environment});
 });
-
-app.use('/js/', express.static(path.resolve(__dirname + '/js/')));
-app.use('/css/', express.static(path.resolve(__dirname + '/css/')));
-app.use('/fonts/', express.static(path.resolve(__dirname + '/fonts/')));
+console.log("TTT",path.resolve(__dirname + '../app/images/'));
+app.use('/js/', express.static(path.resolve(__dirname,'../app//js/')));
+app.use('/css/', express.static(path.resolve(__dirname,'../app/css/')));
+app.use('/fonts/', express.static(path.resolve(__dirname,'../app/fonts/')));
+app.use('/images/', express.static(path.resolve(__dirname,'../app/images/')));
 app.use('/services/', serviceRouter);
 
 if(environment === "production"){

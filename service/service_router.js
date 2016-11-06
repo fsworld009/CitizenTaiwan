@@ -10,8 +10,8 @@ var basePath = path.resolve(__dirname, "data/");
   console.log('Time: ', Date.now());
   next();
 });*/
-router.get("/headings/", function(req, res, next){
-    fs.readFileAsync(basePath + "/headings.json","utf-8").then(function(data){
+router.get("/topics/", function(req, res, next){
+    fs.readFileAsync(basePath + "/topics.json","utf-8").then(function(data){
         res.setHeader('Content-Type', 'application/json');
         res.send(data);
         //return Promise.resolve();

@@ -12,9 +12,9 @@ var Menu = React.createClass({
           <img src="/images/logo.jpg" style={{width:"160px",height:"80px"}}></img>
         </div>
         <Link className="header item" to={rootPath}>Why Matters</Link>
-        <Link className="header item" to={rootPath}>Take Actions!</Link>
-        <Link className="header item" to={rootPath}>Impact</Link>
-        <Link className="header item" to={rootPath}>People</Link>
+        <Link className="header item" to={rootPath+"topics/"}>Take Actions!</Link>
+        <Link className="header item" to="#">Impact</Link>
+        <Link className="header item" to="#">People</Link>
         <div className="menu right">
           <div className="ui simple dropdown item">
           Login

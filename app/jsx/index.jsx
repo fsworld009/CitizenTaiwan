@@ -18,6 +18,7 @@ const store = require("../js/store.js");
  var Page1 = require("./Page1.jsx");
  var Page2 = require("./Page2.jsx");
  var WhyMatters = require("./WhyMatters.jsx");
+ var Topics = require("./Topics.jsx");
  //var Headings = require("./Headings.jsx");
 function mapStateToProps(state){
 
@@ -51,8 +52,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
         <Route path={rootPath} component={AppContainer}>
-          <Route path="page1" component={Page1}/>
-          <Route path="page2" component={Page2}/>
+          <Route path="topics" component={Topics}/>
           <IndexRoute component={WhyMatters} />
         </Route>
     </Router>

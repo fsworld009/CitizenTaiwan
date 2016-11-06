@@ -67,7 +67,6 @@ var App = React.createClass({
     return (
     <div>
       <Menu />
-    
     </div>);
   }
 });

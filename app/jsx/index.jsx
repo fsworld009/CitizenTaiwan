@@ -18,7 +18,7 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
 const store = require("../js/store.js");
 
-// var MainMenu = require("./MainMenu.jsx");
+ var Menu = require("./Menu.jsx");
 // var LanguageMenu = require("./LanguageMenu.jsx");
 // var Status = require("./Status.jsx");
 // var Site= require("./Site.jsx");
@@ -46,7 +46,7 @@ function mapStateToProps(state){
   //   saving: saving,
   //   state: state
   // };
-  return {}
+  return {};
 }
 
 function mapDispatchToProps(dispatch){
@@ -64,7 +64,11 @@ var rootPath = "/app/";
 
 var App = React.createClass({
   render: function(){
-    return (<div>Hello World<i className="fa fa-lg fa-users" /></div>);
+    return (
+    <div>
+      <Menu />
+    
+    </div>);
   }
 });
 //<IndexRoute component={AppContainer} />

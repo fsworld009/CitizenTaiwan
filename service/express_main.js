@@ -37,7 +37,7 @@ if(environment === "production"){
     //use express.static in production
     var webpack = require('webpack');
     //var WebpackDevServer = require('webpack-dev-server');
-    var config = require('./webpack.dev-server.config.js');
+    var config = require('../webpack.dev-server.config.js');
     var compiler = webpack(config);
 
     var webpackDevMiddleware = require("webpack-dev-middleware");

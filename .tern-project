@@ -1,0 +1,18 @@
+{
+  "loadEagerly": [
+      "node_modules/lodash/lodash.js",
+      "node_modules/react/dist/react.js",
+      "node_modules/react-dom/react-dom.js",
+      "web/js/semantic.js"
+    ],
+    "dontLoad": [
+        "node_modules/**"
+    ],
+    "libs": [
+        "browser","jquery"
+    ],
+    "plugins": {
+        "node": {},
+        "webpack": {}
+    }
+}

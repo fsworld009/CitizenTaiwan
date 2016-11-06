@@ -6,8 +6,8 @@ var config = {
     },
     output: {
         //path and public Path is meaningless when used by expressjs
-        path: path.resolve(__dirname, 'web/bundle/'),
-        publicPath: "/bundle/",
+        path: path.resolve(__dirname, '/bundle/'),
+        publicPath: "/app/bundle/",
         filename: "[name].bundle.js",
         chunkFilename: "[id].chunk.js"
     },

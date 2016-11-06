@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "title":"Title 1",
-        "caption" : "Caption 1",
-        "preview": "..."
+        "title":"Name Matters!",
+        "caption" : "International Civil Aviation Organization Excludes Taiwan from Assembly",
+        "preview": "The International Civil Aviation Organization (ICAO), a United Nations specialized agency created in 1944, held its 39th Assembly in Montreal from September 27 to October 7 this year, which formulates regulations and standards that are to be adopted by countries all over the world in order to create a “safe, efficient, secure, economically sustainable and environmentally responsible civil aviation sector."
     },
     {
         "id": 2,
-        "title":"Title 2",
-        "caption" : "Caption 2",
-        "preview": "..."
+        "title":"Love Matters!",
+        "caption" : "Make Taiwan first gay marriage legalized...",
+        "preview": "Taiwan is a liberal country and likely to become the first gay-marriage country in Asia, and we are very proud to entitle and share with LGBTQ groups all over the world."
     },
     {
         "id": 3,
-        "title":"Title 3",
-        "caption" : "Caption 3",
-        "preview": "..."
+        "title":"Identity Matters!",
+        "caption" : "We are who we are",
+        "preview": "Congrat to Kosovo, the youngest democratic country. We know how hard to be..."
     }
 ]

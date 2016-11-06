@@ -41,7 +41,7 @@ var App = React.createClass({
     return (
     <div>
       <Menu />
-      <div className="ui main text container" style={{marginTop: "7em"}}>
+      <div className="ui main container" style={{marginTop: "7em"}}>
         {this.props.children}
       </div>
     </div>);

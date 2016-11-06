@@ -5,3 +5,7 @@
 .pull-right {
     text-align: right;
 }
+
+.main.ui {
+    width: 90%;
+}

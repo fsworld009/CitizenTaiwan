@@ -49,22 +49,21 @@ var Page = React.createClass({
             {
               util.listToComponents(this.props.topics, function(topic, key){
                 return (
-                  <div className="item">
-                    <div className="image">
-                      <img src={"/images/topics/" + topic.id + "/banner.jpg"}/>
+                  <div key={key} className="item">
+                    <div className="image" style={{width:"40em"}}>
+                      <img src={"/images/topics/" + topic.id + "/banner.jpg"} />
                     </div>
                     <div className="content">
-                      <a className="header">Header</a>
+                      <a className="header">{topic.title}</a>
                       <div className="meta">
-                        <span>Description</span>
+                        <span>{topic.caption}</span>
                       </div>
                       <div className="description">
-                        <p></p>
+                        {topic.preview}
                       </div>
                       <div className="extra">
-                        Additional Details
                       </div>
-                      <button className="pull-right ui red button inverted">Take Action!</button>
+                      <button className="pull-right ui green button">Read more..</button>
                     </div>
                   </div>
               );
